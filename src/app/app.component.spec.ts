@@ -20,4 +20,8 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
+  it('Teste para dar errado', () => {
+    expect(false).toEqual(true);
+  });
+
 });
