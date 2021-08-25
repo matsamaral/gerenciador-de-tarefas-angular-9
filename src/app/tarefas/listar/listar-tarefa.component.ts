@@ -23,11 +23,6 @@ export class ListarTarefaComponent implements OnInit {
 
   remover($event: any, tarefa: Tarefa): void {
     $event.preventDefault();
-
-    if (confirm('Deseja remover a tarefa"' + tarefa.nome + '"?')) {
-      this.tarefaService.remover(tarefa.id);
-      this.listarTodos();
-    }
   }
 
   alterarStatus(tarefa: Tarefa): void {

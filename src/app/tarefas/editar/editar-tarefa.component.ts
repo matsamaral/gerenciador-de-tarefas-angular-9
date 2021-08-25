@@ -22,14 +22,6 @@ export class EditarTarefaComponent implements OnInit {
 
   ngOnInit(): void {
     const id = +this.route.snapshot.params.id;
-    this.tarefa = this.tarefaService.buscarPorId(id);
-  }
-
-  atualizar(): void {
-    if (this.formTarefa.form.valid) {
-      this.tarefaService.atualizar(this.tarefa);
-      this.router.navigate(['/tarefas']);
-    }
   }
 
 }
